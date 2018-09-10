@@ -1,0 +1,78 @@
+{
+    "token": "",
+    "botID": "",
+    "adminID": "",
+    "presence": {
+        "interval": 20,
+        "games": [
+            {
+                "game": {
+                    "type": "PLAYING",
+                    "name": "with himself"
+                }
+            },
+            {
+                "game": {
+                    "type": "WATCHING",
+                    "name": "you sleep"
+                }
+            },
+            {
+                "game": {
+                    "type": "WATCHING",
+                    "name": "sentience tutorials"
+                }
+            },
+            {
+                "game": {
+                    "type": "PLAYING",
+                    "name": "with your emotions"
+                }
+            },
+            {
+                "game": {
+                    "type": "PLAYING",
+                    "name": "dead"
+                }
+            },
+            {
+                "game": {
+                    "type": "WATCHING",
+                    "name": "ZONE-tan watch you fap"
+                }
+            },
+            {
+                "game": {
+                    "type": "LISTENING",
+                    "name": " ɢᴏᴏᴅ ᴠɪʙʀᴀᴛɪᴏɴs"
+                }
+            }
+        ]
+    },
+    "prefix": [
+        "",
+        "k!",
+        "<@BOT_CLIENT_ID> ",
+        "<@!BOT_CLIENT_ID> "
+    ],
+    "music": {
+        "shuffle": true,
+        "volume": 1
+    },
+    "CSE": {
+        "apikey": "AIzaSyDh7AcUfDKmvK16QgeE5caaTSXqKs501fE",
+        "engineID": "009162557356952434307:qs_7zdpp0na",
+        "safe": false,
+        "titleSuffix": {
+            "www.youtube.com": " - YouTube",
+            "soundcloud.com": " | Free Listening on ..."
+        }
+    },
+    "soundcloud": {
+        "clientID": ""
+    },
+    "gist": {
+        "username": "",
+        "password": ""
+    }
+}
