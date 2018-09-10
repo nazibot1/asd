@@ -355,7 +355,7 @@ function play(p, message) { // Start playing music
 			music.play(query, (stream) => {
 				if (stream) {
 					connection.playStream(stream, {volume: config.music.volume}).on("end", onEndSong); // Success
-					playing(p, message);
+					song(p, message);
 				}
 				else {
 					message.channel.send("Could not find the specified song").catch(console.log); // Failure
@@ -367,7 +367,7 @@ function play(p, message) { // Start playing music
 				music.play(null, (stream) => {
 					if (stream) {
 						connection.playStream(stream, {volume: config.music.volume}).on("end", onEndSong); // Success
-						playing(p, message);
+						song(p, message);
 					}
 					else {
 						message.channel.send("There are no songs in the playlist").catch(console.log); // Empty playlist
@@ -454,13 +454,13 @@ function skip(p, message) { // Skip the currently playing song
 			var connection = client.voiceConnections.get(message.guild.id);
 			if (connection.dispatcher) {
 				connection.dispatcher.end(); // onEndSong will play a new song
-				playing(p, message);
+				song(p, message);
 			}
 			else {
 				music.skip((stream) => {
 					if (stream) {
 						connection.playStream(music.readable, {volume: config.music.volume}).on("end", onEndSong); // Success
-						playing(p, message);
+						song(p, message);
 					}
 					else {
 						message.channel.send("There are no songs in the playlist").catch(console.log); // Empty playlist
