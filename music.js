@@ -393,9 +393,7 @@ module.exports = class Music {
 				--index;
 				if (this.upcoming.includes(index)) {
 					title = playlist.titles[index];
-					this.upcoming.elems.filter((i) => {
-						return i != index;
-					});
+					this.upcoming.elems.splice(this.upcoming.elems.indexOf(index), 1);
 				}
 			}
 		}
